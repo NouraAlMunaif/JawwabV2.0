@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FFHekaya-Light.otf">
+            <string>FFHekaya-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeaderboardTableViewCell" id="KGk-i7-Jjw" customClass="LeaderboardTableViewCell" customModule="Jawwab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cellImg" translatesAutoresizingMaskIntoConstraints="NO" id="1H1-Tz-aL7">
+                        <rect key="frame" x="50" y="0.0" width="270" height="43.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmr-p4-iWN">
+                        <rect key="frame" x="218" y="5" width="45" height="33"/>
+                        <fontDescription key="fontDescription" name="FFHekaya-Light" family="FF Hekaya" pointSize="27"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="points" translatesAutoresizingMaskIntoConstraints="NO" id="gBM-4o-S33">
+                        <rect key="frame" x="284" y="11" width="24" height="27"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCj-u0-VJz">
+                        <rect key="frame" x="7" y="7" width="35" height="30"/>
+                        <fontDescription key="fontDescription" name="FFHekaya-Light" family="FF Hekaya" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar8-Nd-Gvf">
+                        <rect key="frame" x="65" y="6" width="120" height="33"/>
+                        <fontDescription key="fontDescription" name="FFHekaya-Light" family="FF Hekaya" pointSize="27"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="gBM-4o-S33" firstAttribute="leading" secondItem="mmr-p4-iWN" secondAttribute="trailing" constant="8" id="1sv-ue-qzs"/>
+                    <constraint firstItem="1H1-Tz-aL7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5pi-Cg-eau"/>
+                    <constraint firstAttribute="trailing" secondItem="1H1-Tz-aL7" secondAttribute="trailing" id="Amd-pU-lX2"/>
+                    <constraint firstItem="mmr-p4-iWN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="GWg-FY-1aS"/>
+                    <constraint firstAttribute="trailing" secondItem="gBM-4o-S33" secondAttribute="trailing" constant="12" id="HGm-NW-sDL"/>
+                    <constraint firstAttribute="bottom" secondItem="1H1-Tz-aL7" secondAttribute="bottom" id="HSs-K9-Wn5"/>
+                    <constraint firstItem="TCj-u0-VJz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="I0J-Pb-w1Y"/>
+                    <constraint firstItem="Ar8-Nd-Gvf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="57" id="IdI-Pe-Bz1"/>
+                    <constraint firstItem="TCj-u0-VJz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="XOw-Ss-vKb"/>
+                    <constraint firstAttribute="trailing" secondItem="1H1-Tz-aL7" secondAttribute="trailing" id="ap1-KX-VfI"/>
+                    <constraint firstItem="1H1-Tz-aL7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hul-5N-jqn"/>
+                    <constraint firstItem="Ar8-Nd-Gvf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="ikx-Ab-yGs"/>
+                    <constraint firstItem="1H1-Tz-aL7" firstAttribute="leading" secondItem="TCj-u0-VJz" secondAttribute="trailing" constant="2" id="lwo-d9-V27"/>
+                    <constraint firstItem="1H1-Tz-aL7" firstAttribute="leading" secondItem="TCj-u0-VJz" secondAttribute="trailing" constant="8" id="mF5-ME-Edn"/>
+                    <constraint firstItem="1H1-Tz-aL7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="oco-QU-OlT"/>
+                    <constraint firstItem="gBM-4o-S33" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tKM-Ai-R7g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="playerName" destination="Ar8-Nd-Gvf" id="ilO-Vn-QU2"/>
+                <outlet property="playerScore" destination="mmr-p4-iWN" id="qHu-S2-Bgd"/>
+                <outlet property="rank" destination="TCj-u0-VJz" id="44x-v5-AFz"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="128.63568215892056"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cellImg" width="329" height="83"/>
+        <image name="points" width="37" height="37"/>
+    </resources>
+</document>
